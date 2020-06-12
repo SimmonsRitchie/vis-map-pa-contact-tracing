@@ -24,11 +24,16 @@ class Main extends React.Component {
     return (
       <div className="container__outer">
         <div className="container__inner">
-          <Header headline="Headline" subtitle="Subtitle here." />
+          <Header
+            headline="Contact tracers needed in Pennsylvania"
+            subtitle="Public health experts estimate that Pennsylvania needs nearly 4,000 contact tracers to reach 
+            the contacts of all new COVID-19 cases within one week. Estimates are based on the number of new cases in 
+            each county over the past 14 days."
+          />
           <Body data={data} />
           <Footer
-            byline="Author"
-            source="Source name"
+            byline="Daniel Simmons-Ritchie"
+            source="George Washington University Contact Tracing Workforce Estimator (June 8, 2020)"
             outlet="Spotlight PA"
             outletUrl="https://www.spotlightpa.org/"
           />
