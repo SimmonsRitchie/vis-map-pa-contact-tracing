@@ -1,5 +1,5 @@
-### Boilerplate Spotlight React Widget
-This is a template for creating embeddable React JS widgets or data visualizations for Spotlight PA articles. It incorporates Spotlight PA styles and the Bulma CSS framework.
+### Map - Pa Contact Tracers
+A map of the number of COVID-19 contact tracers needed in each Pennsylvania county based on June 8 estimates from George Washington University.
 
 [Parcel.js](https://github.com/parcel-bundler/parcel) is used to bundle the source files.
 
