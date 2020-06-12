@@ -4,6 +4,7 @@ import Header from "./Header";
 import Body from "./Body";
 import Footer from "./Footer";
 import { pymSendHeight } from "../utils/handlePym";
+import SimpleMap from "./SimpleMap";
 
 class Main extends React.Component {
   componentDidMount() {
@@ -21,6 +22,8 @@ class Main extends React.Component {
 
   render() {
     const { data } = this.props;
+    const { geoData, contactTracerData } = data;
+    console.log(geoData);
     return (
       <div className="container__outer">
         <div className="container__inner">
@@ -30,7 +33,12 @@ class Main extends React.Component {
             the contacts of all new COVID-19 cases within one week. Estimates are based on the number of new cases in 
             each county over the past 14 days."
           />
-          <Body data={data} />
+          <Body data={data}>
+            <SimpleMap
+              geoData={geoData}
+              contactTracerData={contactTracerData}
+            />
+          </Body>
           <Footer
             byline="Daniel Simmons-Ritchie"
             source="George Washington University Contact Tracing Workforce Estimator (June 8, 2020)"

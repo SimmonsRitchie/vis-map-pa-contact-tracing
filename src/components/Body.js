@@ -1,14 +1,16 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from "react";
+import PropTypes from "prop-types";
 
-class Body extends React.Component {
-  render() {
-    return (
-      <div className="body__container">
-        Insert map/chart/interactive thing here.
-      </div>
-    );
-  }
-}
+const Body = ({ children }) => {
+  return <div className="body__container">{children}</div>;
+};
+
+Body.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export default Body;

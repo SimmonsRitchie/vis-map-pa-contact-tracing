@@ -1,9 +1,11 @@
 {
-  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended", "prettier/react"
+  ],
   "root": true,
   "parser": "babel-eslint",
   "rules": {
     "react/prop-types": ["error"],
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off"
   }
 }
