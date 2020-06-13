@@ -8,7 +8,6 @@ import {
 import PropTypes from "prop-types";
 import ReactTooltip from "react-tooltip";
 import createColorScale from "../../utils/createColorScale";
-// import createColorScale from "../../utils/scale";
 import Tooltip from "../Tooltip";
 
 const PA_CENTER = [-77.641, 40.989];
