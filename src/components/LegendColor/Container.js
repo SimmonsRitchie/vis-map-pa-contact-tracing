@@ -2,15 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import Block from "./Block";
 
-const LegendColor = ({ colorScale }) => {
+const LegendColor = ({ title, colorScale }) => {
   const colors = colorScale.range();
   const colorRanges = colorScale.range().map((d) => colorScale.invertExtent(d));
   return (
     <div className="legend-color-container__container">
       <div className="legend-color-container__container-title">
-        <span className="has-text-weight-semibold">
-          Estimated number of contact tracers needed
-        </span>
+        <span className="has-text-weight-semibold">{title}</span>
       </div>
       <div className="legend-color-container__color-container">
         {colors.map((color, idx) => {
@@ -32,6 +30,7 @@ const LegendColor = ({ colorScale }) => {
 };
 
 LegendColor.propTypes = {
+  title: PropTypes.string.isRequired,
   colorScale: PropTypes.func.isRequired,
 };
 

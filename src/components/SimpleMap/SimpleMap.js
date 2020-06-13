@@ -34,7 +34,10 @@ const SimpleMap = ({ geoData, contactTracerData }) => {
 
   return (
     <div className="simple-map__container">
-      <LegendColor colorScale={colorScale} />
+      <LegendColor
+        colorScale={colorScale}
+        title="Number of contact tracers needed"
+      />
       <ComposableMap
         data-tip=""
         projection="geoMercator"
