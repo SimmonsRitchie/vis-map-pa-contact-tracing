@@ -1,0 +1,23 @@
+.tooltip-wrapper__container {
+  background: white;
+  padding: $xs-size;
+  font-size: $size-7;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.tooltip-wrapper__label-container {
+  margin-bottom: 5px;
+}
+
+.tooltip-wrapper__label {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: normal;
+}
+
+.tooltip-wrapper__sub-label {
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  white-space: normal;
+}

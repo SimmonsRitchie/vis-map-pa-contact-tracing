@@ -1,0 +1,42 @@
+.tooltip-flex-grid__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: right;
+  font-size: $size-7;
+
+}
+
+.tooltip-flex-grid__row {
+  width: 100%;
+  flex: 1 1 100%;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2px;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .tooltip-flex-grid__cell:first-child {
+    font-weight: 600;
+    flex: 0 0 percentage(2/3);
+    text-align: left;
+  }
+  .tooltip-flex-grid__cell:nth-child(2) {
+    text-align: left;
+    flex: 0 0 percentage(1/3);
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.tooltip-flex-grid__cell {
+  text-align: left;
+  display: block;
+  white-space: normal;
+  position: relative;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
