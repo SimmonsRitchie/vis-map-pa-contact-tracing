@@ -9,6 +9,7 @@ import PropTypes from "prop-types";
 import ReactTooltip from "react-tooltip";
 import createColorScale from "../../utils/createColorScale";
 import Tooltip from "../Tooltip";
+import LegendColor from "../LegendColor/Container";
 
 const PA_CENTER = [-77.641, 40.989];
 
@@ -33,6 +34,7 @@ const SimpleMap = ({ geoData, contactTracerData }) => {
 
   return (
     <div className="simple-map__container">
+      <LegendColor colorScale={colorScale} />
       <ComposableMap
         data-tip=""
         projection="geoMercator"
@@ -91,7 +93,9 @@ const SimpleMap = ({ geoData, contactTracerData }) => {
         </ZoomableGroup>
       </ComposableMap>
       <ReactTooltip type="light">
-        <Tooltip data={tooltipContent} schema={TOOLTIP_SCHEMA} />
+        {tooltipContent && (
+          <Tooltip data={tooltipContent} schema={TOOLTIP_SCHEMA} />
+        )}
       </ReactTooltip>
     </div>
   );
