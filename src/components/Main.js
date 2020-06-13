@@ -23,6 +23,7 @@ class Main extends React.Component {
   render() {
     const { data } = this.props;
     const { geoData, contactTracerData } = data;
+    console.log(contactTracerData);
     return (
       <div className="container__outer">
         <div className="container__inner">

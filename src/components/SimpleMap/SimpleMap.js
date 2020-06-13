@@ -7,7 +7,8 @@ import {
 } from "react-simple-maps";
 import PropTypes from "prop-types";
 import ReactTooltip from "react-tooltip";
-import createColorScale from "../../utils/scale";
+import createColorScale from "../../utils/createColorScale";
+// import createColorScale from "../../utils/scale";
 import Tooltip from "../Tooltip";
 
 const PA_CENTER = [-77.641, 40.989];
@@ -26,7 +27,10 @@ const TOOLTIP_SCHEMA = [
 
 const SimpleMap = ({ geoData, contactTracerData }) => {
   const [tooltipContent, setTooltipContent] = useState("");
-  const colorScale = createColorScale([0, 150]);
+  const colorScale = createColorScale({
+    data: contactTracerData,
+    accessor: "contact_tracers",
+  });
 
   return (
     <div className="simple-map__container">
