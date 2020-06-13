@@ -1,17 +1,19 @@
-import { schemePuBu } from "d3-scale-chromatic";
+import { schemeBlues } from "d3-scale-chromatic";
 import { extent } from "d3-array";
 import { scaleQuantize } from "d3-scale";
 import filterOutliers from "./dataHelpers/removeOutliers";
 
-const createColorScale = ({ data, accessor }) => {
+const createColorScale = ({ data, accessor, colorSteps = 5 }) => {
   /**
    * Removes outliers from data and builds a d3 quantize scale. Good for choropleth maps.
    *
    * @param data: Arr of objects. Data to use for scale.
    * @param accessor: String. Target prop, that will be used for the scale.
+   * @param colorSteps: Int. Number of steps in color scheme.
    */
   // SET COLOR SCHEME
-  const colorScheme = schemePuBu[6];
+  let colorScheme = schemeBlues[colorSteps + 1];
+  colorScheme = colorScheme.filter((_, i) => i !== 0);
   // GET VALUES FOR DOMAIN
   let dataArr = data.map((item) => item[accessor]);
   /**

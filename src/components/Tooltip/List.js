@@ -27,7 +27,7 @@ List.propTypes = {
 
 const ListItem = ({ label, value }) => {
   return (
-    <div>
+    <div className="tooltip-list__container">
       <span>{`${label}: `}</span>
       <span className="tooltip-list__value">{value}</span>
     </div>

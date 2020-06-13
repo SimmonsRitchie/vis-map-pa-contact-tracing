@@ -76,7 +76,7 @@ const SimpleMap = ({ geoData, contactTracerData }) => {
                         opacity: "0.5",
                         stroke: "white",
                         strokeWidth: 2,
-                        outline: "pink",
+                        outline: "black",
                       },
                       pressed: {
                         opacity: "0.5",
