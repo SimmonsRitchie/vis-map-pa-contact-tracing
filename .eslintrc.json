@@ -7,6 +7,7 @@
     "react/prop-types": ["error"],
     "react/jsx-filename-extension": "off",
     "react/prefer-stateless-function": "off",
-    "react/state-in-constructor": "off"
+    "react/state-in-constructor": "off",
+    "react/jsx-fragments": "off"
   }
 }
