@@ -27,7 +27,7 @@ class Main extends React.Component {
       <div className="container__outer">
         <div className="container__inner">
           <Header
-            headline="Contact tracers needed in Pennsylvania"
+            headline="How many contact tracers does Pennsylvania need?"
             subtitle="As of June 8, public health experts estimate that Pennsylvania needs nearly 4,000 contact tracers to reach 
             the contacts of all new COVID-19 cases within one week. Estimates are based on the number of new cases in 
             each county over the past 14 days."
