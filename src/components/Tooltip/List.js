@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-fragments */
 import React from "react";
 import PropTypes from "prop-types";
 
