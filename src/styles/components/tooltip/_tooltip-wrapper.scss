@@ -1,17 +1,21 @@
+
 .tooltip-wrapper__container {
-  background: white;
-  padding: $xs-size;
+  // background: white;
+  background: inherit;
+  // padding: $xs-size;
   font-size: $size-7;
   line-height: 1.5;
-  width: 100%;
+  width: 160px;
+  margin: 5px 0;
 }
 
 .tooltip-wrapper__label-container {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .tooltip-wrapper__label {
   text-transform: uppercase;
+  font-weight: 600;
   letter-spacing: 0.5px;
   white-space: normal;
 }
@@ -20,4 +24,11 @@
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   white-space: normal;
+}
+
+.tooltip-wrapper__footnote {
+  margin-top: 8px;
+  font-size: 11px;
+  font-style: italic;
+  opacity: 0.8;
 }

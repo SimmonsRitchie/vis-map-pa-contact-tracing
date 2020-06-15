@@ -23,6 +23,10 @@ const TOOLTIP_SCHEMA = [
     fieldName: "Contact tracers needed",
     accessor: "contact_tracers",
   },
+  {
+    fieldName: "Cases over past 14 days",
+    accessor: "new_cases",
+  },
 ];
 
 const SimpleMap = ({ geoData, contactTracerData }) => {
@@ -95,9 +99,9 @@ const SimpleMap = ({ geoData, contactTracerData }) => {
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>
-      <ReactTooltip type="light">
+      <ReactTooltip type="dark">
         {tooltipContent && (
-          <Tooltip data={tooltipContent} schema={TOOLTIP_SCHEMA} />
+          <Tooltip data={tooltipContent} schema={TOOLTIP_SCHEMA} table />
         )}
       </ReactTooltip>
     </div>

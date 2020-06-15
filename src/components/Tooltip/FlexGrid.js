@@ -27,7 +27,7 @@ FlexGrid.propTypes = {
 export const FlexRow = ({ label, value }) => {
   return (
     <div className="tooltip-flex-grid__row">
-      <FlexCell>{label}:</FlexCell>
+      <FlexCell>{label}</FlexCell>
       <FlexCell>{value}</FlexCell>
     </div>
   );
