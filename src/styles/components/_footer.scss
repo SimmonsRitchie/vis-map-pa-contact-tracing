@@ -14,17 +14,12 @@
 }
 
 .footer__byline {
-  display: inline-block;
   padding-right: 3px;
 
 }
 
 .footer__separator::before {
   content: "•";
-  display: inline-block;
   padding-right: 3px;
 }
 
-.footer__source {
-  display: inline-block;
-}
