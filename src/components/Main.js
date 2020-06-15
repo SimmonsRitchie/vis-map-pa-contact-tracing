@@ -40,7 +40,7 @@ class Main extends React.Component {
           </Body>
           <Footer
             byline="Daniel Simmons-Ritchie"
-            source="George Washington University Contact Tracing Workforce Estimator (June 8, 2020)"
+            source="George Washington University Contact Tracing Workforce Estimator (June 8, 2020); Pa. Department of Health COVID-19 case data (June 8, 2020)"
             outlet="Spotlight PA"
             outletUrl="https://www.spotlightpa.org/"
           />
